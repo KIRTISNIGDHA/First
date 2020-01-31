@@ -8,7 +8,7 @@ from sklearn.svm import SVR
 import pickle
 
 st.title("Predictoma ")
-st.markdown("Welcome to Predictoma- A prediction of Glioblastoma patient prognosis using  Machine Learning Regression Algorithm. Please input the following values to get a prediction: ")
+st.markdown("Welcome to Predictoma- A machine learning based prognosis prediction tool for Glioblastoma patients. Please input the following values to get a prediction: ")
 
 if st.checkbox('Demographics data'):
     Age = st.number_input('Age at diagnosis (in years)',min_value=1,max_value=150,value =1,step=1)
