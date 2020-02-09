@@ -25,7 +25,7 @@ if st.checkbox('Medical history'):
    Shortest_Dimension = st.number_input('Shortest Dimension of tumor (in cm)',min_value=0.025,max_value=1.00)
 
 if st.checkbox('Genomics information'):
-      Fraction_Genome_Altered = st.number_input('Fraction Genome Altered',min_value=0.00,max_value= 0.75)
+      Fraction_Genome_Altered = st.number_input('Fraction Genome Altered',min_value=0.00,max_value= 0.75,value =0.00)
       PTENcna = st.number_input('for PTEN',min_value=-2.00,max_value= 2.00)
       EGFRcna = st.number_input('for EGFR',min_value=-1.00,max_value= 2.00)
       TP53cna = st.number_input('for TP53',min_value=-2.00,max_value= 2.00)                
