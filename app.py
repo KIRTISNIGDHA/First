@@ -6,7 +6,16 @@ from sklearn.linear_model import LinearRegression
 from sklearn.linear_model import Lasso
 import pickle
 
-st.title("Predictoma ")
+st.markdown(""" 
+<style> 
+body {
+color:#8E44AD;
+ background-color: #FEF9E7;
+ }
+ </style>
+ """, unsafe_allow_html= True)
+ 
+st.title("Predictoma")
 st.markdown("Welcome to Predictoma- A machine learning based prognosis prediction tool for Glioblastoma patients. Please input the following values to get a prediction: ")
 
 if st.checkbox('Demographics data'):
@@ -47,9 +56,16 @@ if st.checkbox('Genomics information'):
             else:
                st.markdown (f"According to the linear regression algorithm,the predicted Survival is approximately **{mae2_pred:0.1f} months**.")
 
+
+
+## Embed the slide for information
+if st.checkbox('For more information about the prediction'):
+     st.markdown('''<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQf5VlBDNKdAI4-mh778Mr34ueD594717nsNvCuCXrTo7_tUGI692Dta2BqKo6l_Yd9L906yARiciup/embed?start=false&loop=false&delayms=3000" frameborder="0" width="480" height="299" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>''', unsafe_allow_html =True)
         
 # Provide information about glioma
 # provide information about different metrics
+ 
+ #st.markdown("How this was predicted")
 
 
 
