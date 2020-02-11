@@ -42,13 +42,14 @@ if st.checkbox('Genomics information'):
             mae1_pred = prediction - 5.9
             mae2_pred = prediction + 5.9
 
-            st.write ("According to the linear regression algorithm\n")
             if mae1_pred>0:
-               st.write (f"The predicted Survival is {mae1_pred:0.1f} - {mae2_pred:0.1f} months")
+               st.markdown (f"According to the linear regression algorithm,the predicted Survival is **{mae1_pred:0.1f} - {mae2_pred:0.1f} months**.")
             else:
-               st.write (f"The predicted Survival is approximately {mae2_pred:0.1f} months")
+               st.markdown (f"According to the linear regression algorithm,the predicted Survival is approximately **{mae2_pred:0.1f} months**.")
 
         
+# Provide information about glioma
+# provide information about different metrics
 
 
 
