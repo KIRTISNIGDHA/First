@@ -17,7 +17,7 @@ color:#8E44AD;
  """, unsafe_allow_html= True)
  
  
-st.title("Predictoma")
+st.title("Prognostoma")
 st.markdown("Welcome to Prognostoma- A machine learning based prognosis prediction tool for Glioblastoma patients. Please input the following values to get a prediction: ")
 
 
