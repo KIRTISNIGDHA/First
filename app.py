@@ -6,6 +6,7 @@ from sklearn.linear_model import LinearRegression
 from sklearn.linear_model import Lasso
 import pickle
 
+# for background color
 st.markdown(""" 
 <style> 
 body {
@@ -15,8 +16,10 @@ color:#8E44AD;
  </style>
  """, unsafe_allow_html= True)
  
+ 
 st.title("Predictoma")
-st.markdown("Welcome to Predictoma- A machine learning based prognosis prediction tool for Glioblastoma patients. Please input the following values to get a prediction: ")
+st.markdown("Welcome to Prognostoma- A machine learning based prognosis prediction tool for Glioblastoma patients. Please input the following values to get a prediction: ")
+
 
 if st.checkbox('Demographics data'):
     Age = st.number_input('Age at diagnosis (in years)',min_value=1,max_value=120,value =10,step=1)
@@ -59,14 +62,12 @@ if st.checkbox('Genomics information'):
 
 
 ## Embed the slide for information
-if st.checkbox('For more information about the prediction'):
+if st.checkbox('More information about the prediction'):
      st.markdown('''<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQf5VlBDNKdAI4-mh778Mr34ueD594717nsNvCuCXrTo7_tUGI692Dta2BqKo6l_Yd9L906yARiciup/embed?start=false&loop=false&delayms=3000" frameborder="0" width="480" height="299" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>''', unsafe_allow_html =True)
         
-# Provide information about glioma
-# provide information about different metrics
+
  
- #st.markdown("How this was predicted")
 
 
 
-st.info('This tool is to help make the doctor and patient an informed decision regarding treatment strategy and is a purely informational message. The predictions are made using machine learning algorithms.')
+st.info('This tool is for the doctors to help the patient make an informed decision regarding treatment strategy and is a purely informational message. The predictions are made using machine learning algorithm.')
